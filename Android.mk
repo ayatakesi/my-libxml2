@@ -80,6 +80,7 @@ LOCAL_SHARED_LIBRARIES := libicuuc
 LOCAL_MODULE:= libxml2
 LOCAL_CLANG := true
 LOCAL_ADDITIONAL_DEPENDENCIES += $(LOCAL_PATH)/Android.mk
+LOCAL_EXPORT_C_INCLUDES += $(LOCAL_PATH)/include
 include $(BUILD_SHARED_LIBRARY)
 
 # For the host
@@ -94,3 +95,5 @@ LOCAL_MODULE := libxml2
 LOCAL_CLANG := true
 LOCAL_ADDITIONAL_DEPENDENCIES += $(LOCAL_PATH)/Android.mk
 include $(BUILD_HOST_STATIC_LIBRARY)
+
+$(call import-module,libicuuc)
