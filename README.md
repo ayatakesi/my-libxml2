@@ -17,7 +17,7 @@ $: git checkout nougat-release
 $: git checkout -b my/nougat-release
 ```
 
-3. `java/INSTALL`にしたがいHTMLサポートを削除するコミット[edb5870767fed8712a9b77ef34097209b61ab2db](https://android.googlesource.com/platform/external/libxml2/+/edb5870767fed8712a9b77ef34097209b61ab2db)をrevert[1^]
+3. `java/INSTALL`にしたがいHTMLサポートを削除するコミット[edb5870767fed8712a9b77ef34097209b61ab2db](https://android.googlesource.com/platform/external/libxml2/+/edb5870767fed8712a9b77ef34097209b61ab2db)をrevert[^1]
 
 ```bash
 $: git revert edb5870767fed8712a9b77ef34097209b61ab2db
@@ -39,4 +39,4 @@ $: git remote add mine https://github.com/JIBUN/my-libxml2.git
 $: git branch -M my/nougat-release
 $: git push -u mine my/nougat-release
 ```
-[1^]: このrevertによってHTMLサポートを復活させないと、少なくともewwは動かなかったです。
+[^1]: このrevertによってHTMLサポートを復活させないと、少なくともewwは動かなかったです。
