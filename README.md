@@ -29,7 +29,7 @@ $: git revert edb5870767fed8712a9b77ef34097209b61ab2db
 $: patch -p1 < PATCH_FOR_LIBXML2.patch
 ```
 
-4. 上記patch ファイルとpatch適用後ファイルをcommitして空レポジトリにpush
+5. 上記patch ファイルとpatch適用後ファイルをcommitして空レポジトリにpush
 
 ```bash
 $: git add -A
